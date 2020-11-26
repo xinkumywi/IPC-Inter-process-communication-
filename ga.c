@@ -113,7 +113,14 @@ void board(char * pBuf)
     printf("  %c  |  %c  |  %c \n", pBuf[board_offset+6], pBuf[board_offset+7], pBuf[board_offset+8]);
 
     printf("     |     |     \n\n");
-	
+	switch(is_win(pBuf)){
+		case 1:
+		printf("you lose\n");
+		return ;
+		case 2:
+		printf("you win\n");
+		return;
+	}
 	if(pBuf[whosturn] == my_turn){
 		if(0){
 		INPUT_ERR:	

@@ -23,7 +23,7 @@ void board(char *);
 #define A_DATA 6
 #define B_DATA 7
 #define board_offset 8
-
+int is_win(char *);
 
 
 #endif
